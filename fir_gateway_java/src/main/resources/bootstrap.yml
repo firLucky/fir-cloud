@@ -1,0 +1,43 @@
+server:
+  port: 51001
+spring:
+#  autoconfigure:
+#    exclude: org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration
+  application:
+    name: fir-gateway-dpe
+  cloud:
+    nacos:
+      discovery:
+        server-addr: fir.com:17772
+        username: nacos
+        password: nacos1227fir&*
+        service: fir-gateway
+      config:
+        server-addr: fir.com:17772
+        file-extension: yml
+        username: nacos
+        password: nacos1227fir&*
+        group: DEFAULT_GROUP
+#    gateway:
+#      globalcors:
+#        cors-configurations:
+#          '[/**]': # 匹配所有请求
+#            allowedOrigins: "*" # 跨域处理 允许所有的域
+#            allowedMethods: # 支持的方法
+#              - GET
+#              - POST
+#              - PUT
+#              - DELETE
+#            allowedHeaders: "*" # 允许所有请求头
+    # nacos.core.auth.caching.enabled=true 时，开启登录校验
+    # 此时需要设置 username 与 password
+    # nacos.core.auth.caching.enabled=false 时，不使用用户与密码
+
+
+# 引入logger日志相关配置
+logging:
+  config: classpath:logback-spring.xml
+#  level:
+#    #开启网关日志
+#    org.springframework.cloud.gateway: debug
+

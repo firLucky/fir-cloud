@@ -1,0 +1,28 @@
+server:
+  port: 12009
+spring:
+  application:
+    name: fir-node-two-dev
+  cloud:
+    # nacos.core.auth.caching.enabled=true 时，开启登录校验
+    # 此时需要设置 username 与 password
+    # nacos.core.auth.caching.enabled=false 时，不使用用户与密码
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:18848
+        username: nacos
+        password: nacos
+        service: fir-node-two-dev
+      config:
+        server-addr: 127.0.0.1:18848
+        username: nacos
+        password: nacos
+        file-extension: yml
+        group: DEFAULT_GROUP
+        namespace: 9d5bbff0-30d0-4521-86cc-d9e547064bce
+
+# 引入logger日志相关配置
+logging:
+  config: classpath:logback-spring.xml
+
+name: 子节点2-1号

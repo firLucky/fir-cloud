@@ -1,0 +1,33 @@
+
+global:
+  # 令牌校验
+  tokenCheck: true
+  # 令牌头变量名称
+  tokenHeader: Authorization
+  # 整体对称加解密
+  aes: true
+  # 整体非对称加解密
+  rsa: true
+  # 防重放攻击
+  replay: true
+  # 完整性校验
+  reqIntegrity: true
+  # 防xss
+  xss: true
+  # 全局异常捕捉-打印堆栈异常
+  printStackTrace: true
+
+  # 不需要进行过滤的白名单
+  whiteIp:
+    - localhost
+    - 192.168.1.8
+
+  # 不需要进行过滤的白名单
+  whiteUrls:
+    - /api/search
+    - /api/auth
+    - /api/user/register
+    - /api/user/check
+    - /api/user/code
+    - /api/item
+    - /ws

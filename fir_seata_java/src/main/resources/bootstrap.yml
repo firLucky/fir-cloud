@@ -1,0 +1,39 @@
+server:
+  port: 17701
+
+spring:
+  datasource:
+    #   数据源基本配置
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 允许公钥 allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:13306/seata_undo?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=utf-8&useSSL=false&serverTimezone =Asia/Shanghai
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: serverAddr456456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 2de1e24c-8b4c-4005-a8e1-b6cba65a3143
+        username: nacos
+        password: nacos
+        group: SEATA_GROUP
+#        service: service.vgroupMapping
+      config:
+        username: nacos
+        password: nacos
+#        file-extension: default_tx_group
+        group: SEATA_GROUP
+
+seata:
+  # 选择XA模式
+  data-source-proxy-mode: AT
+  # 事务分组名称，要和服务端对应
+  tx-service-group: mygroup
+  service:
+    vgroup-mapping:
+      # key是事务分组名称 value要和服务端的机房名称保持一致
+      mygroup: default
+
