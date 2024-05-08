@@ -11,7 +11,7 @@
 
 ## 简述
 
-本项目配合前端项目[fir_security_vue2](https://gitee.com/dong-puen/fir-cloud/tree/master/fir_security_vue2)可以运行。
+本项目配合前端项目fir_security_vue2可以运行。
 
 
 
