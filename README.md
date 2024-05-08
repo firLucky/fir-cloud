@@ -7,14 +7,9 @@
 	<img src="https://img.shields.io/badge/Fir%20Cloud-v1.0.0-da282a"></a>
 	<img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
 </p>
+## 简述
 
-```
-
-```
-
-
-
-
+本项目配合前端项目[fir_security_vue2](https://gitee.com/dong-puen/fir-cloud/tree/master/fir_security_vue2)可以运行。
 
 ## 🧭 功能说明
 
@@ -37,22 +32,6 @@
 |       AES对称加密       |  ✔   |
 |      RSA非对称加密      |  ✔   |
 
-
-
-## 版本选择
-
-选择目前最新的Spring Boot 2.6.13作为基础。
-
-| Spring Cloud Alibaba Version | Spring Cloud Version  | Spring Boot Version |
-| ---------------------------- | --------------------- | ------------------- |
-| 2021.0.5.0                   | Spring Cloud 2021.0.5 | 2.6.13              |
-
-根据Spring Cloud的版本选择适合的中间件。
-
-| Spring Cloud Alibaba Version | Sentinel Version | Nacos Version | RocketMQ Version | Dubbo Version | Seata Version |
-| ---------------------------- | ---------------- | ------------- | ---------------- | ------------- | ------------- |
-| 2021.0.5.0                   | 1.8.6            | 2.2.0         | 4.9.4            | ~             | 1.6.1         |
-
 ## 框架
 
 | 框架                                                         | 说明                             | 版本           | 相关文档                                                     |
@@ -70,3 +49,18 @@
 | [commons-lang3](https://github.com/apache/commons-lang)      | 类型转换工具库                   | 3.12.0         | [文档](https://commons.apache.org/proper/commons-lang/apidocs/) |
 | [fastjson](https://github.com/alibaba/fastjson)              | JSON 工具库                      | 1.2.83         | [文档](https://github.com/alibaba/fastjson/wiki/Quick-Start-CN) |
 
+## 版本选择
+
+选择目前最新的Spring Boot 2.6.13作为基础。
+
+| Spring Cloud Alibaba Version | Spring Cloud Version  | Spring Boot Version |
+| ---------------------------- | --------------------- | ------------------- |
+| 2021.0.5.0                   | Spring Cloud 2021.0.5 | 2.6.13              |
+
+根据Spring Cloud的版本选择适合的中间件。
+
+| Spring Cloud Alibaba Version | Sentinel Version | Nacos Version | RocketMQ Version | Dubbo Version | Seata Version |
+| ---------------------------- | ---------------- | ------------- | ---------------- | ------------- | ------------- |
+| 2021.0.5.0                   | 1.8.6            | 2.2.0         | 4.9.4            | ~             | 1.6.1         |
+
+## 
